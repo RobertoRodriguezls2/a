@@ -1,0 +1,25 @@
+const bulkLand = [process.env.PUBLIC_URL+'/LandPics/0.jpg',
+process.env.PUBLIC_URL+'/LandPics/1.jpg',
+process.env.PUBLIC_URL+'/LandPics/2.jpg',
+process.env.PUBLIC_URL+'/LandPics/3.jpg',
+process.env.PUBLIC_URL+'/LandPics/4.jpg',
+process.env.PUBLIC_URL+'/LandPics/5.jpg',
+process.env.PUBLIC_URL+'/LandPics/6.jpg',
+process.env.PUBLIC_URL+'/LandPics/7.jpg',
+process.env.PUBLIC_URL+'/LandPics/8.jpg',
+process.env.PUBLIC_URL+'/LandPics/9.jpg',
+process.env.PUBLIC_URL+'/LandPics/10.jpg',
+process.env.PUBLIC_URL+'/LandPics/11.jpg',
+process.env.PUBLIC_URL+'/LandPics/12.jpg',
+process.env.PUBLIC_URL+'/LandPics/13.jpg',
+process.env.PUBLIC_URL+'/LandPics/14.jpg',
+process.env.PUBLIC_URL+'/LandPics/15.jpg',
+process.env.PUBLIC_URL+'/LandPics/16.jpg',
+process.env.PUBLIC_URL+'/LandPics/17.jpg',
+process.env.PUBLIC_URL+'/LandPics/18.jpg',
+process.env.PUBLIC_URL+'/LandPics/19.jpg',
+process.env.PUBLIC_URL+'/LandPics/20.jpg',
+]
+
+
+export default bulkLand
