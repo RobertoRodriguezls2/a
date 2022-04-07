@@ -10,5 +10,9 @@ process.env.PUBLIC_URL+'/PortPics/8.jpg',
 process.env.PUBLIC_URL+'/PortPics/9.jpg',
 process.env.PUBLIC_URL+'/PortPics/10.jpg',
 process.env.PUBLIC_URL+'/PortPics/11.jpg',
+process.env.PUBLIC_URL+'/PortPics/12.jpg',
+process.env.PUBLIC_URL+'/PortPics/13.jpg',
+process.env.PUBLIC_URL+'/PortPics/14.jpg',
+process.env.PUBLIC_URL+'/PortPics/15.jpg',
 ]
 export default BulkPort

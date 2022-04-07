@@ -1,17 +1,33 @@
-.picgal{
+.picgalW {
   height: 300px;
   max-height: 500px;
   width: auto;
   max-width: 500px;
 }
+.picgalH {
+  height: 300px;
+  max-height: 500px;
+  width: auto;
+  max-width: auto;
+}
 
- .card {
-   transition: box-shadow .3s;
-   border-radius:20px;
-   border: 15px ;
-   float: left;
-   
- }
- .card:hover {
-   box-shadow: 0 0 15px rgba(33, 33, 33, 0.938); 
- }
+.piccont {
+  display: block;
+  justify-content: center;
+  
+
+
+}
+
+.card {
+  transition: box-shadow .3s;
+  border-radius: 20px;
+  border: 15px;
+  float: left;
+  display: flex;
+
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(33, 33, 33, 0.938);
+}

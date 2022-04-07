@@ -15,6 +15,8 @@ import LandPage from "./pages/LandPage";
 import { SocialIcon } from 'react-social-icons';
 import SideCard from "./components/SideCard";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import Register from "./pages/Register";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -22,6 +24,8 @@ const Auto = require('./images/Auto.jpg');
 const Drone = require('./images/Drone.jpg');
 const Land = require('./images/Land.jpg');
 const Port = require('./images/Port.jpg');
+const gif = require('./images/websitegif.gif');
+const tech = require('./images/arduino.jpg');
 
 
 
@@ -40,7 +44,10 @@ class App extends Component {
   render() {
     return (
       <>
-        <Router>
+        {/* <BrowserRouter basename="/portfoliophoto">
+      
+      </BrowserRouter> */}
+        <Router basename="/PortfolioPhoto">
           <Routes>
             <Route exact path='/' element={
               <>
@@ -50,55 +57,67 @@ class App extends Component {
                 <div class='container' data-theme="dark">
 
                   <CardII
+                    className='box'
                     title="Automotive"
                     body="From casual cruisers to hypercars in the wild. Rolling shots, studio shots, and everything in between to create the best compositions"
                     image={Auto}
                     page='Automotive'
+                    btnmsg='View Gallery'
                   />
                   <CardII
-
+                    className='box'
                     title="Portraits"
                     body="Whether its professional headshots or personal photos for fun, everyone has a good side so lets find yours."
                     image={Port}
-                    page='Port'
+                    page='Portraits'
+                    btnmsg='View Gallery'
                   />
                   <CardII
+                    className='box'
                     title="Drone"
                     body="They say the sky's the limit, until you get a drone. Then the opportunities are endless. Covering all areas imaginable"
                     image={Drone}
                     page='Drone'
+                    btnmsg='View Gallery'
                   />
                   <CardII
+                    className='box'
                     title="Landscapes"
                     body="My personal favorite photos to take. Capturing moments that highlight the best an area has to offer."
                     image={Land}
                     page='Land'
+                    btnmsg='View Gallery'
                   />
-                  
-
-
-
-                  {/* <SideCard
-                  title="Roberto Rodriguez" 
-                   body="A photographer/videographer from the SouthBay Area of California.
+                  <CardII
+                    className='box'
+                    title="Video"
+                    body="Cars, people or scenery, just like my photos I can film and edit that video you've always wanted to create. Click below to see my video projects."
+                    image={gif}
+                    page='vids'
+                    btnmsg='View Videos'
+                    url='https://www.youtube.com/channel/UCeZ24tgb-H_gEFFVuPw07dQ'
+                  />
+                  <CardII
+                    className='box'
+                    title="Embedded Systems"
+                    body="Not photography but projects I do involving microcontrollers that I program to work with other software."
+                    image={tech}
+                    page='projects'
+                    btnmsg='View Projects'
+                    url='https://github.com/RobertoRodriguezls2'
+                  /> 
+                </div>
+                <div>
+                <SideCard
+                    title='About me'
+                    body="A photographer/videographer from the SouthBay Area of California.
                    I cover areas from the Long Beach, Carson, San Pedro area to as far as Malibu, Oxnard and Inland Empire.
                    I can cover your arial needs as I'm part 107 certified to fly a drone commercially and realiably for your photo, video or any other needs.
                    I can cover any photo or video needs you have, click below to learn more or contact me through email or any of my socials."
-                   firstbtn={"/About"}
-                   firstbtnmsg={"About"}
-                   secondbtn={"/About"}
-                   secondbtnmsg={"contact"}
-                   /> */}
-                   <SideCard
-                   title='About me'
-                   body="A photographer/videographer from the SouthBay Area of California.
-                   I cover areas from the Long Beach, Carson, San Pedro area to as far as Malibu, Oxnard and Inland Empire.
-                   I can cover your arial needs as I'm part 107 certified to fly a drone commercially and realiably for your photo, video or any other needs.
-                   I can cover any photo or video needs you have, click below to learn more or contact me through email or any of my socials."
-                   firstbtn='/About'
-                   firstbtnmsg='About'
-                   secondbtn='/About'
-                   secondbtnmsg='Contact'                   />
+                    firstbtn='/About'
+                    firstbtnmsg='About'
+                    secondbtn='/Contact'
+                    secondbtnmsg='Contact' />
                 </div>
 
               </>
@@ -113,6 +132,8 @@ class App extends Component {
             <Route path="/Drone" element={<DronePage />} />
             <Route path="/Land" element={<LandPage />} />
             <Route path="/About" element={<AboutPage />} />
+            <Route path="/Contact" element={<ContactPage />} />
+            
           </Routes>
         </Router>
 
