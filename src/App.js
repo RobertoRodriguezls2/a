@@ -49,7 +49,7 @@ class App extends Component {
       </BrowserRouter> */}
         <Router basename="/PortfolioPhoto">
           <Routes>
-            <Route exact path='/' element={
+            <Route exact={true} path='/' element={
               <>
 
                 <Topmenu />

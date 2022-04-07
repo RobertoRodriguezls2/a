@@ -46,9 +46,9 @@ class Topmenu extends React.Component{
                         <Link to='/'> <a class="btn btn-ghost normal-case text-xl " >Jushustudios</a> </Link>
     
                     </div>
-                    <div class="navbar-end text-left  basis-auto ">
+                    {/* <div class="navbar-end text-left  basis-auto ">
                         <button onClick={() => this.setState({count: this.state.count + 1})}>{this.state.count}</button>
-                    </div>
+                    </div> */}
                 </div>
     
             </>
