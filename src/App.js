@@ -47,7 +47,7 @@ class App extends Component {
         {/* <BrowserRouter basename="/portfoliophoto">
       
       </BrowserRouter> */}
-        <Router basename="/PortfolioPhoto">
+        <Router basename="/">
           <Routes>
             <Route exact={true} path='/' element={
               <>
