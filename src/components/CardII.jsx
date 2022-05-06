@@ -32,18 +32,16 @@ function CardII({ image, title, body, page, btnmsg, url }) {
 
         <div class="card sm:h-[auto] sm:w-[96] w-196 bg-base-100 shadow-xl  bg-carbon/[.25]" ref={targetRef}>
             <figure class="px-10 pt-10 " className='piccont'>
-                {console.log(dimensions.width)}
-                {((image.width > image.height) ?
-                    <img src={image} alt="Shoes" class="min-w-0 rounded-xl  object-contain" className='picgalW' />
-                    : <img src={image} alt="Shoes"
+              
+                     <img src={image} alt="Shoes"
                         ref={imgElement}
-                        class="min-w-0 rounded-xl  object-contain"
+                        class="rounded-xl object-contain"
                         className='picgalW'
                         onLoad={( () => {console.log(imgElement.current.naturalWidth)})}
                     />
-                )}
+                
 
-                {/* <img src={image} alt="Shoes" class="min-w-0 rounded-xl  object-contain" className='picgal' /> */}
+            
             </figure>
             <div class="card-body items-center text-center">
                 <h2 class="card-title">{title}</h2>

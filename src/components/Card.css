@@ -8,7 +8,9 @@
   height: 300px;
   max-height: 500px;
   width: auto;
-  max-width: auto;
+  max-width: 500px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .piccont {
