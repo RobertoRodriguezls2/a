@@ -31,3 +31,146 @@
 .card:hover {
   box-shadow: 0 0 15px rgba(33, 33, 33, 0.938);
 }
+
+.btncontainer {
+  background: orange;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  
+}
+
+.cardbtn{
+  
+  background: orange;
+  align-items: flex-start;
+}
+
+.collection
+{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+ 
+
+@media screen  {
+
+    .collection
+{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+    
+}
+
+
+.collection:hover
+{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.collection::before 
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+.collection span
+{
+    position: relative;
+    z-index: 1;
+}
+
+.collection i
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.collection i::before
+{
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.collection:hover i::before
+{
+    width: 20px;
+    left: 20%;
+}
+
+.collection i::after 
+{
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.collection:hover i::after
+{
+    width: 20px;
+    left: 80%;
+}
+
+@media only screen and (max-width: 600px)  {
+  .collection:hover , .collection:focus, .collection:active
+{
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.collection:hover, .collection:focus, .collection:active i::before 
+{
+  width: 20px;
+  left: 20%;
+}
+
+
+
+.collection:hover, .collection:focus, .collection:active i::after 
+{
+  width: 20px;
+  left: 80%;
+}
+}

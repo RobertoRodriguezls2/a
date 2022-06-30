@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
+import Button from './Button'
 
 
 
@@ -14,16 +15,29 @@ function SideCard({ title, body, firstbtn, secondbtn, firstbtnmsg, secondbtnmsg 
                 <div class="card-body">
                     <h2 class="card-title">{title}</h2>
                     <p>{body}</p>
-                    <div class="card-actions justify-end">
-                        <Link to={firstbtn}>
-                            <button class="btn btn-primary">{firstbtnmsg}</button>
+                    <div class="card-actions justify-center pt-3">
+
+                        
+                            
+                            <Link className='btnbottom' to={firstbtn}>
+                                <Button btnmsg={firstbtnmsg} />
+                            </Link>
+                            {
+                                (secondbtn ? <Link  to={secondbtn}>
+                                    <Button btnmsg={secondbtnmsg} />
+                                </Link> : <div />)
+
+                            }
+                       
+                        {/* <Link className='btnbottom' to={firstbtn}>
+                            <Button btnmsg={firstbtnmsg} />
                         </Link>
                         {
-                            (secondbtn ? <Link to={secondbtn}>
-                                <button class="btn btn-primary">{secondbtnmsg}</button>
+                            (secondbtn ? <Link className='btnbottom' to={secondbtn}>
+                                <Button  btnmsg={secondbtnmsg} />
                             </Link> : <div />)
 
-                        }
+                        } */}
 
 
                     </div>

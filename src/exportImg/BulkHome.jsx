@@ -1,0 +1,22 @@
+const bulkHome = [process.env.PUBLIC_URL+'/HomePics/1.jpg',
+process.env.PUBLIC_URL+'/HomePics/2.jpg',
+process.env.PUBLIC_URL+'/HomePics/3.jpg',
+process.env.PUBLIC_URL+'/HomePics/4.jpg',
+process.env.PUBLIC_URL+'/HomePics/5.jpg',
+process.env.PUBLIC_URL+'/HomePics/6.jpg',
+process.env.PUBLIC_URL+'/HomePics/7.jpg',
+process.env.PUBLIC_URL+'/HomePics/8.jpg',
+process.env.PUBLIC_URL+'/HomePics/9.jpg',
+process.env.PUBLIC_URL+'/HomePics/10.jpg',
+process.env.PUBLIC_URL+'/HomePics/11.jpg',
+process.env.PUBLIC_URL+'/HomePics/12.jpg',
+process.env.PUBLIC_URL+'/HomePics/13.jpg',
+process.env.PUBLIC_URL+'/HomePics/arduino.jpg',
+process.env.PUBLIC_URL+'/HomePics/Auto.jpg',
+process.env.PUBLIC_URL+'/HomePics/Drone.jpg',
+process.env.PUBLIC_URL+'/HomePics/Land.jpg',
+process.env.PUBLIC_URL+'/HomePics/Port.jpg',
+process.env.PUBLIC_URL+'/HomePics/website.gif',
+]
+
+export default bulkHome

@@ -4,6 +4,7 @@ import ImageGallery from 'react-image-gallery';
 
 
 
+
 const photo1 = require('../images/1.jpg');
 const photo2 = require('../images/2.jpg');
 const photo3 = require('../images/3.jpg');

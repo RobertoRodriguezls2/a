@@ -1,7 +1,9 @@
 
-import React, { useRef, useLayoutEffect, useState } from 'react';
+import React, { useRef} from 'react';
 import './Card.css';
-import { Router, Route, Routes, } from 'react-router-dom'
+import Button from './Button';
+
+
 
 import { Link } from 'react-router-dom'
 
@@ -11,20 +13,12 @@ function CardII({ image, title, body, page, btnmsg, url }) {
     const imgElement = React.useRef(null);
     const projects = 'projects'
     const vids = 'vids'
-    const imgHeights = {};
+
     const imgsize = new Image();
     imgsize.src = image;
     imgsize.width = image;
     const targetRef = useRef();
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-    useLayoutEffect(() => {
-        if (targetRef.current) {
-            setDimensions({
-                width: targetRef.current.offsetWidth,
-                height: targetRef.current.offsetHeight
-            });
-        }
-    }, []);
+
 
 
     return (
@@ -32,35 +26,37 @@ function CardII({ image, title, body, page, btnmsg, url }) {
 
         <div class="card sm:h-[auto] sm:w-[96] w-196 bg-base-100 shadow-xl  bg-carbon/[.25]" ref={targetRef}>
             <figure class="px-10 pt-10 " className='piccont'>
-                {console.log(dimensions.width)}
-                {((image.width > image.height) ?
-                    <img src={image} alt="Shoes" class="min-w-0 rounded-xl  object-contain" className='picgalW' />
-                    : <img src={image} alt="Shoes"
+                 <img src={image} alt="Shoes"
                         ref={imgElement}
                         class="min-w-0 rounded-xl  object-contain"
+                        loading="lazy"
                         className='picgalW'
-                        onLoad={( () => {console.log(imgElement.current.naturalWidth)})}
+                        
                     />
-                )}
+            
 
                 {/* <img src={image} alt="Shoes" class="min-w-0 rounded-xl  object-contain" className='picgal' /> */}
             </figure>
-            <div class="card-body items-center text-center">
+            <div className='cardbtn' class="card-body items-center text-center">
                 <h2 class="card-title">{title}</h2>
                 <p>{body}</p>
-                <div class="card-actions flex sm:flex-row flex-col ">
-                    
-                        {
-                            ((page == vids || page == projects) ?
-                                <a href={url}>
-                                        <button class="btn btn-primary">{btnmsg}</button>
-                                </a>
-                                : <Link to={page}>
-                                <button class="btn btn-primary">{btnmsg}</button>
-                            </Link>)
+                <div  class="card-actions flex sm:flex-row flex-col ">
 
-                        }
-                       
+                    {/* {
+                        ((page == vids || page == projects) ?
+                            <Button url={url} btnmsg={btnmsg} />
+                            : <Link className='linkcont' to={page}><Button btnmsg={btnmsg}/></Link>)
+
+                    } */}
+                    {
+                        ((page === vids || page === projects) ?
+                        <Button url={url} btnmsg={btnmsg} />
+                            : <Link role="button" tabIndex="0" className='linkcont' to={page}> <div className='collection' style={{ '--clr': '#1e9bff' }}><span>{btnmsg}</span><i></i></div></Link>)
+
+                    }
+
+
+
                 </div>
             </div>
         </div>

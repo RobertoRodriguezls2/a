@@ -16,7 +16,6 @@ import { SocialIcon } from 'react-social-icons';
 import SideCard from "./components/SideCard";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import Register from "./pages/Register";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -54,14 +53,14 @@ class App extends Component {
 
                 <Topmenu />
                 <Gallery />
-                <div class='container' data-theme="dark">
+                <div className="container"  data-theme="dark">
 
                   <CardII
                     className='box'
                     title="Automotive"
                     body="From casual cruisers to hypercars in the wild. Rolling shots, studio shots, and everything in between to create the best compositions"
                     image={Auto}
-                    page='Automotive'
+                    page='/Automotive'
                     btnmsg='View Gallery'
                   />
                   <CardII
