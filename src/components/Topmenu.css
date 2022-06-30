@@ -1,11 +1,31 @@
-
+/* 
 
 .topnav {
     background-color: #333;
     overflow: hidden;
     
   }
+ 
+
+  .jush {
+    text-align: center;
+    
+  }
+  .nav {
+    background-color: #aa04a2;
+
+    
+    
+  }
+
   
+  .navbar {
+    
+    overflow: hidden;
+    
+
+
+  } */
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;

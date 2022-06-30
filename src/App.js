@@ -46,7 +46,7 @@ class App extends Component {
         {/* <BrowserRouter basename="/portfoliophoto">
       
       </BrowserRouter> */}
-        <Router basename="/PortfolioPhoto">
+        <Router basename="/">
           <Routes>
             <Route exact={true} path='/' element={
               <>
@@ -99,7 +99,7 @@ class App extends Component {
                   <CardII
                     className='box'
                     title="Embedded Systems"
-                    body="Not photography but projects I do involving microcontrollers that I program to work with other software."
+                    body="Not photography, but projects I do involving microcontrollers that I program to work with other software."
                     image={tech}
                     page='projects'
                     btnmsg='View Projects'
@@ -111,7 +111,7 @@ class App extends Component {
                     title='About me'
                     body="A photographer/videographer from the SouthBay Area of California.
                    I cover areas from the Long Beach, Carson, San Pedro area to as far as Malibu, Oxnard and Inland Empire.
-                   I can cover your arial needs as I'm part 107 certified to fly a drone commercially and realiably for your photo, video or any other needs.
+                   I can cover your arial needs as I'm part 107 certified to fly a drone commercially.
                    I can cover any photo or video needs you have, click below to learn more or contact me through email or any of my socials."
                     firstbtn='/About'
                     firstbtnmsg='About'

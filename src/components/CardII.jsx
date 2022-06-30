@@ -35,7 +35,7 @@ function CardII({ image, title, body, page, btnmsg, url }) {
                     />
             
 
-                {/* <img src={image} alt="Shoes" class="min-w-0 rounded-xl  object-contain" className='picgal' /> */}
+            
             </figure>
             <div className='cardbtn' class="card-body items-center text-center">
                 <h2 class="card-title">{title}</h2>
