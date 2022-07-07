@@ -1,0 +1,19 @@
+.container {
+    margin: 20px auto;
+  width: auto;
+  height: auto;
+  background-color: rgba(247, 9, 9, 0);
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.butn {
+    background: orange;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    
+}

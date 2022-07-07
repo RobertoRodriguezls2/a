@@ -16,6 +16,7 @@ import { SocialIcon } from 'react-social-icons';
 import SideCard from "./components/SideCard";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import Signin from "./pages/Signin";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -132,6 +133,7 @@ class App extends Component {
             <Route path="/Land" element={<LandPage />} />
             <Route path="/About" element={<AboutPage />} />
             <Route path="/Contact" element={<ContactPage />} />
+            <Route path="/Signin" element={<Signin />} />
             
           </Routes>
         </Router>
