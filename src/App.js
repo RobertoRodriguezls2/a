@@ -4,9 +4,7 @@ import './components/Card.css'
 import './App.css';
 import Topmenu from './components/Topmenu';
 import Gallery from './components/Gallery';
-
 import CardII from "./components/CardII";
-
 import Portfolio from "./pages/Portfolio";
 import AutoPage from "./pages/AutoPage";
 import PortPage from "./pages/PortPage";
@@ -16,7 +14,7 @@ import { SocialIcon } from 'react-social-icons';
 import SideCard from "./components/SideCard";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import Signin from "./pages/Signin";
+
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -44,17 +42,15 @@ class App extends Component {
   render() {
     return (
       <>
-        {/* <BrowserRouter basename="/portfoliophoto">
-      
-      </BrowserRouter> */}
-        <Router basename="/">
+        
+        {/* <Router basename="/">
           <Routes>
             <Route exact={true} path='/' element={
               <>
 
                 <Topmenu />
                 <Gallery />
-                <div className="container"  data-theme="dark">
+                <div className="container" data-theme="dark">
 
                   <CardII
                     className='box'
@@ -105,10 +101,10 @@ class App extends Component {
                     page='projects'
                     btnmsg='View Projects'
                     url='https://github.com/RobertoRodriguezls2'
-                  /> 
+                  />
                 </div>
                 <div>
-                <SideCard
+                  <SideCard
                     title='About me'
                     body="A photographer/videographer from the SouthBay Area of California.
                    I cover areas from the Long Beach, Carson, San Pedro area to as far as Malibu, Oxnard and Inland Empire.
@@ -125,7 +121,7 @@ class App extends Component {
 
             }>
             </Route>
-            {/* <Route path="/about" element={<About />} /> */}
+           
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/Automotive" element={<AutoPage />} />
             <Route path="/Portraits" element={<PortPage />} />
@@ -133,13 +129,14 @@ class App extends Component {
             <Route path="/Land" element={<LandPage />} />
             <Route path="/About" element={<AboutPage />} />
             <Route path="/Contact" element={<ContactPage />} />
-            <Route path="/Signin" element={<Signin />} />
-            
+
+
           </Routes>
-        </Router>
+        </Router> */}
+        
 
         <div className="bottom">
-
+        <h1>Under Construction, sorry. Please contact me or see my work at any of the links below</h1>
           <SocialIcon
             url="https://www.instagram.com/jushustudios310/?hl=en"
             className='icons' />
