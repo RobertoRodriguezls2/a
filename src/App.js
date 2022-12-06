@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <>
         
-        <Router basename="/">
+        {/* <Router basename="/">
           <Routes>
             <Route exact={true} path='/' element={
               <>
@@ -132,11 +132,11 @@ class App extends Component {
 
 
           </Routes>
-        </Router>
+        </Router> */}
         
 
         <div className="bottom">
-        {/* <h1>Under Construction, sorry. Please contact me or see my work at any of the links below</h1> */}
+        <h1>Under Construction, sorry. Please contact me or see my work at any of the links below</h1>
           <SocialIcon
             url="https://www.instagram.com/jushustudios310/?hl=en"
             className='icons' />
